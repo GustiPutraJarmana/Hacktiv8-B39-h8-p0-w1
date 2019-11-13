@@ -1,0 +1,75 @@
+1. Newtown Second Low
+    Algoritma :
+        1. Simpan massa dengan nilai 600 kg
+        2. Simpan percepatan dengan nilai 2 m/s2
+        3. Simpan resultan gaya tanpa nilai
+        4. Hitung hasil perkalian massa dengan percepatan
+        5. Setelah mendapatkan hasil perhitungan, isikan hasilnya ke dalam resultan gaya
+        6. Tampilkan nilai dari resultan gaya
+
+    Psuedocode:
+        STORE "massa" with value 600 kg
+        STORE "percepatan" with value 2 m/s2
+        STORE "resultanGaya" without value
+        CALCULATE "massa" times "percepatan"
+        SET "resultanGaya" value with calculation result
+        DISPLAY "resultanGaya"
+
+2. Tahun Kabisat 
+    Algoritma:
+        1. Masukan tahun dengan nilai berapapun
+        2. Jika tahun habis dibagi 4 dan tidak habis dibagi 100 maka masuk ke langkah 4
+        3. Jika tahun habis dibagi 4 dan habis dibagi 100 habis dan habis dibagi 400 maka masuk ke langkah 4
+        4. Tampilkan tahun kabisat
+        5. Jika tidak memenuhi kondisi di atas maka masuk ke langkah 6
+        6. Tampilkan bukan tahun kabisat
+
+    Psuedocode:
+        STORE "tahun" with any value
+            IF "tahun" mod 4 equals to 0 and "tahun" mod 100 not equals 0 or "tahun" mod 4 equals to 0 and "tahun" mod 100 equals to 0 and "tahun mod 400 equals to 0
+                DISPLAY "tahun kabisat"
+            ELSE
+                DISPLAY "bukan tahun kabisat"
+            ENDIF
+
+3. Laudry Day
+    Algoritma:
+        1. Masukan "pakaian" ke mesin cuci
+        2. Hitung "pakaian" satu demi satu hingga sama dengan 20
+        3. Jika "pakaian" sama dengan 20 maka masuk ke langkah 5
+        4. Jika "pakaian" kurang dari 20 maka masuk ke langkah 6
+        5. Tampilkan "nyalahkan mesin"
+        6. Tampilkan "jangan nyalahkan mesin"
+
+    Psuedocode:
+        STORE "pakaian" to 1
+        WHILE "pakaian" less than equals 20
+            IF "pakaian" equals to 20
+                DISPLAY "nyalahkan mesin"
+            ELSE
+                DISPLAY "jangan nyalahkan mesin"
+            ENDIF
+            ADD "pakaian" by 1
+        ENDWHILE
+
+4. Periksa Kuku
+    Algoritma:
+        1. Mulai mengecek kuku siswa-siswi dari urutan bertama.
+        2. Cek kuku siswa satu demi satu
+        3. Jika guru menemukan siswa atau siswi dengan kuku panjang maka lanjut ke langkah 5.
+        4. Jika guru memeriksa siswa atau siswi tidak memiliki kuku panjang maka lanjut ke langkah 6 dan lanjut ke langka 7
+        5. Guru menghukum siswa atau siswi
+        6. Guru memuji siswa atau siswi
+        7. Melanjutkan ngecek siswa atau siswi lain
+
+    Psuedocode:
+        STORE "siswaSiswi" to 1
+        STORE "kukuSiswaSiswi" equals true
+        WHILE "siswaSiswi" less than equals 40
+            IF "kukuSiswaSiswi" equals to true
+                DO "menghukum"
+            ELSE
+                DO "dipuji"
+            ENDIF
+            ADD "siswaSiswi" by 1
+        ENDWHILE

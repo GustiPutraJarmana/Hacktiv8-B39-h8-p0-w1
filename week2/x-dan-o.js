@@ -4,7 +4,7 @@ function xo(str) {
   for (var i = 0; i < str.length; i++) {
     str[i] === "x" ? x++ : o++;
   }
-  return x === o ? true : false;
+  return x === o;
 }
 
 // TEST CASES

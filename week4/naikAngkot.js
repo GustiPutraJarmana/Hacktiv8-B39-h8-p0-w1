@@ -4,8 +4,9 @@ function naikAngkot(arrPenumpang) {
   let result = [];
   for (let i = 0; i < arrPenumpang.length; i++) {
     let biaya =
-      (rute.indexOf(arrPenumpang[i][2]) - rute.indexOf(arrPenumpang[i][1])) *
-      2000;
+      Math.abs(
+        rute.indexOf(arrPenumpang[i][2]) - rute.indexOf(arrPenumpang[i][1])
+      ) * 2000;
     let data = {
       penumpang: arrPenumpang[i][0],
       naikDari: arrPenumpang[i][1],
@@ -20,7 +21,7 @@ function naikAngkot(arrPenumpang) {
 //TEST CASE
 console.log(
   naikAngkot([
-    ["Dimitri", "B", "F"],
+    ["Dimitri", "F", "B"],
     ["Icha", "A", "B"]
   ])
 );
